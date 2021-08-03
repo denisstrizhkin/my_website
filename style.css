@@ -1,14 +1,58 @@
-html {
+body {
+	color: green;
+	background-color: black;
 	font-family: monospace;
-        background: black;
 }
 
-body { }
+main {
+	max-width: 900px;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+}
+
+p {
+	font-size: x-large;
+	margin-top: 0px;
+}
+
+img {
+	margin-top: 0px;
+}
 
 h1 {
+	font-size: 26px;
 	color: white;
+	text-align: center;
 }
 
 a {
 	color: yellow;
+}
+
+@media (min-width: 55em) {
+	.lol {
+		display: inline-block;
+		vertical-align: top ;
+	}
+
+	.resright, .disappear {
+		display: block ;
+		float: right;
+		padding: 20px ;
+		clear: both ;
+		max-height: 300px ;
+		max-width: 300px ;
+	}
+
+	.resmid {
+		max-height: 300px ;
+		max-width: 300px ;
+	}
+	
+	.column {
+		float: left;
+		width: 50%;
+	}
 }
