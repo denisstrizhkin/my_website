@@ -1,7 +1,7 @@
 body {
 	color: green;
 	background-color: black;
-	font-family: monospace;
+	font-family: monospace;	
 }
 
 main {
@@ -14,15 +14,11 @@ main {
 
 p {
 	font-size: x-large;
-	margin-top: 0px;
-}
-
-img {
-	margin-top: 0px;
+	margin-top: 10px;
 }
 
 h1 {
-	font-size: 26px;
+	font-size: xx-large;
 	color: white;
 	text-align: center;
 }
@@ -31,28 +27,46 @@ a {
 	color: yellow;
 }
 
-@media (min-width: 55em) {
-	.lol {
-		display: inline-block;
-		vertical-align: top ;
+.begining
+{
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+}
+
+.begining .imgbox
+{
+	width: 300px;
+	flex: 0 0 261px;
+}
+
+.begining .imgbox img
+{
+	max-width: 100%;
+}
+
+.begining .text
+{
+	margin-left: 20px;
+	font-size: x-large;
+}
+
+@media (max-width: 700px)
+{
+	.begining
+	{
+		flex-direction: column;
+		max-width: 350px;	
 	}
 
-	.resright, .disappear {
-		display: block ;
-		float: right;
-		padding: 20px ;
-		clear: both ;
-		max-height: 300px ;
-		max-width: 300px ;
+	.begining .imgbox
+	{
+		width: 60%;
+		margin: 0 auto;
 	}
 
-	.resmid {
-		max-height: 300px ;
-		max-width: 300px ;
-	}
-	
-	.column {
-		float: left;
-		width: 50%;
+	.begining .text
+	{
+		margin-left: 0px;
 	}
 }
