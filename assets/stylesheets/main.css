@@ -57,6 +57,7 @@ table {
 :root {
   --clr-bg: white;
   --clr-normal-1: #222222;
+  --clr-normal-2: #8a8a8a;
   --clr-accent: #50a14f;
 }
 
@@ -77,6 +78,7 @@ table {
 body {
   background-color: var(--clr-bg);
   color: var(--clr-normal-1);
+  border-top: 3px solid var(--clr-accent);
 }
 
 a {
@@ -92,7 +94,11 @@ a {
 .preview {
   line-height: 1.5;
   padding-bottom: 1.5em;
-  border-bottom: 1px solid var(--clr-normal-1);
+  border-bottom: 1px solid var(--clr-accent);
+}
+
+.preview p {
+  margin-bottom: 1em;
 }
 
 .preview h2 {
@@ -101,6 +107,17 @@ a {
 
 .preview h3 {
   margin-bottom: 1em;
+  color: var(--clr-normal-2);
+}
+
+.readmore {
+  font-size: 1.1em;
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.readmore:hover {
+  text-decoration: underline;
 }
 
 .social-links {
@@ -118,6 +135,7 @@ a {
 }
 
 .copyright {
+  color: var(--clr-normal-2);
   text-align: center;
   padding-bottom: 2em;
 }
