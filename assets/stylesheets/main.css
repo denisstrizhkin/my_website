@@ -53,10 +53,11 @@ table {
   Variables
   ========================================
 */
+
 :root {
   --clr-bg: white;
   --clr-normal-1: #222222;
-  --clr-accent: ;
+  --clr-accent: #50a14f;
 }
 
 /*
@@ -73,21 +74,25 @@ table {
           box-sizing: border-box;
 }
 
-.body {
+body {
   background-color: var(--clr-bg);
+  color: var(--clr-normal-1);
+}
+
+a {
   color: var(--clr-normal-1);
 }
 
 .container {
   padding-inline: 0.5em;
-  width: min(100%, 56em);
+  width: min(100%, 50em);
   margin: 0 auto;
 }
 
 .preview {
   line-height: 1.5;
   padding-bottom: 1.5em;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--clr-normal-1);
 }
 
 .preview h2 {
@@ -109,7 +114,7 @@ table {
 }
 
 .social-links a:hover {
-  color: aqua;
+  color: var(--clr-accent);
 }
 
 .copyright {
