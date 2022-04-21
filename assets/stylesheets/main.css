@@ -63,8 +63,39 @@ table {
 }
 
 .container {
-  width: min(100%, 900px);
+  width: min(100%, 56em);
   background-color: green;
   margin: 0 auto;
+}
+
+.preview {
+  padding-inline: 0.5em;
+  line-height: 1.5;
+}
+
+.preview h2 {
+  font-size: 1.7em;
+}
+
+.preview h3 {
+  margin-bottom: 1em;
+}
+
+.social-links {
   text-align: center;
+  font-size: 1.9em;
+  margin-bottom: 0.5em;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: aqua;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 2em;
 }
