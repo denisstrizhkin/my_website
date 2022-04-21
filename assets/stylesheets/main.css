@@ -50,6 +50,17 @@ table {
 
 /*
   ========================================
+  Variables
+  ========================================
+*/
+:root {
+  --clr-bg: white;
+  --clr-normal-1: #222222;
+  --clr-accent: ;
+}
+
+/*
+  ========================================
   Layout
   ========================================
 */
@@ -62,15 +73,21 @@ table {
           box-sizing: border-box;
 }
 
+.body {
+  background-color: var(--clr-bg);
+  color: var(--clr-normal-1);
+}
+
 .container {
+  padding-inline: 0.5em;
   width: min(100%, 56em);
-  background-color: green;
   margin: 0 auto;
 }
 
 .preview {
-  padding-inline: 0.5em;
   line-height: 1.5;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid white;
 }
 
 .preview h2 {
@@ -84,7 +101,7 @@ table {
 .social-links {
   text-align: center;
   font-size: 1.9em;
-  margin-bottom: 0.5em;
+  margin-block: 1.0em 0.5em;
 }
 
 .social-links a {
