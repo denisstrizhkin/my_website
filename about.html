@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 
-<html lang="end">
-	<head>
-		<meta charset="utf-8"/>
-		<title> About </title>
-		<link rel="stylesheet" type='text/css' href="assets/stylesheets/main.css">
-	</head>
+<html lang="eng">
 
-	<body>
-		<header>
-			<h1>
-				<a href="index.html"> Denis Strizhkin's Website </a>
-			</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Denis Strizhkin's Website </title>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/icomoon/style.css">
+</head>
 
-			<nav>
-				<a href="index.html">    Home     </a>
-				<a href="archives.html"> Archives </a>
-				<a href="tags.html">     Tags     </a>
-				<a href="about.html">    About    </a>
-			</nav>
-		</header>
+<body>
+  <header class="header">
+    <div class="header__container _container">
+      <h1 class="header__title">
+        <a class="header__title__link _link" href="index.html"> Denis Strizhkin's Website </a>
+      </h1>
 
-		<section>
-			<div class="imgbox">
-				<img src="assets/images/my_photo.jpg" alt="Photo of Me">	
-			</div>
-			<div class="text">
-				<p> I am a 20 years old CS university student.
-					I am fond of learning about technology. Also, I enjoy coding
-					and solving problems.
-					I consider myself free software and GNU/linux enthusiast. </p>
-			</div>
-		</section>
+      <nav class="header__nav nav">
+        <a class="nav__link _link" href="index.html">Home</a>
+        <a class="nav__link _link" href="archives.html">Archives</a>
+        <a class="nav__link _link" href="tags.html">Tags</a>
+        <a class="nav__link _link" href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
 
-		<footer>
-			<h3> My Contacts: </h3>
-			<a href="https://github.com/denisstrizhkin"> github  </a></br>
-			<a href="https://vk.com/denisstrizhkin">     vk page </a></br>
-			<small> &copy; Denis Strizhkin 2022 </small>
+  <article class="about">
+    <div class="about__container _container">
+      <div class="about__text">
+        <p class="about__paragraph"> As you can guess my name is Denis and I am a 20 years old CS university student.
+          I live in Russia, Saint-Petersburg. This is my personal Blog. </p>
 
-			<nav>
-				<a href="index.html">    Home     </a>
-				<a href="archives.html"> Archives </a>
-				<a href="tags.html">     Tags     </a>
-				<a href="about.html">    About    </a>
-			</nav>
-		<footer>
-	</body>
+        <p class="about__paragraph"> Currently I am working towards becoming a full-stack web-developer.
+          I am planning on making a standalone CV page but right now you can checkout my github profile. This website is
+          one of my projects. Its idea is to master basics of
+          HTML5, CSS3, JS and also to create a personal blog.
+        </p>
+
+        <p class="about__paragraph"> I think that it is necessary to have your own
+          website for expressing your thoughts independently of social-media. This way
+          you are 100% in control of your page. I hope that one day I would actually post something here.
+        </p>
+
+      </div>
+      <img class="about__img" src="assets/images/my_photo.png" alt="Photo of Me">
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer__container _container">
+      <div class="footer__social-links social-links">
+        <a class="social-links__link _link" href="https://github.com/denisstrizhkin" target="_blank">
+          <span class="icon-github"></span></a>
+        <a class="social-links__link _link" href="mailto:strdenis02@gmail.com" target="_blank">
+          <span class="icon-mail4"></span></a>
+        </a>
+        <a class="social-links__link _link" href="https://vk.com/denisstrizhkin" target="_blank">
+          <span class="icon-vk"></span></a>
+        </a>
+        <a class="social-links__link _link" href="https://t.me/denisstrizhkin" target="_blank">
+          <span class="icon-telegram"></span></a>
+        </a>
+      </div>
+      <div class="footer__copyright copyright">
+        <small class="copyright__text"> &copy; Denis Strizhkin 2022. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
